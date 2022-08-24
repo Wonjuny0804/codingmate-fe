@@ -4,6 +4,7 @@ import layoutTypes from "../types/layout";
 import metaData from "../types/metaData";
 
 import defaultData from "../public/defaultData.json";
+import Navigation from "./Navigation";
 
 interface Props {
   children: React.ReactNode;
@@ -28,6 +29,7 @@ const Layout: FC<Props> = ({
         />
         <meta name="author" content={metaData?.author ?? defaultData.author} />
       </Head>
+      {navigation && <Navigation />}
       <main
         className={
           layoutType === "maxWidthSet"

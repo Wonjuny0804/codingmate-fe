@@ -4,7 +4,7 @@ import Layout from "../components/Layout";
 const Home: NextPage = () => {
   return (
     <Layout>
-      <div> There is something</div>
+      <div className={`min-h-screen`}> There is something</div>
     </Layout>
   );
 };
