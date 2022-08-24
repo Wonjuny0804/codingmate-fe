@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer layout {
+  .max-width-layout {
+    @apply lg:w-[764px] lg:m-auto;
+  }
+
+  .full-width-layout {
+    @apply w-screen;
+  }
+}
+
 html,
 body {
   padding: 0;
@@ -22,9 +32,5 @@ a {
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
   }
 }
