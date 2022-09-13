@@ -5,7 +5,17 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        "purple-main": "#4D30DC",
+        secondary: "#C2F46F",
+        monoBlack: "#000000",
+        "monoBlack-500": "rgba(0,0,0,0.5)",
+      },
+      fontFamily: {
+        UncutSans: ["UncutSans", "sans serif"],
+      },
+    },
   },
   plugins: [],
 };
